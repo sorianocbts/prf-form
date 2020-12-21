@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 16px;
+    color: #0d6cbf;
+  }
+  label {
+    font-weight: bold;
+  }
+  .container {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-container {
+    width: 60%;
+  }
+    .form-control {
+    height: 100%;
+  }
+  .form-required {
+    margin-left: 5px;
+    color: red;
+  }
+  .btn {
+    background-color: #f1f1f1 !important;
+    color: black;
+  }
