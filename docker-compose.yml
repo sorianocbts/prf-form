@@ -1,0 +1,20 @@
+version: '3'
+services:
+  prf-form:
+    container_name: prf-form
+    restart: always
+    build: .
+    # ports:
+    #   - '80:5000'
+    expose:
+      - 3000
+    restart: always
+#     volumes: ['./:/var/www/html']
+    environment:
+      VIRTUAL_HOST: passwords.robertmsoriano.com, www.passwords.robertmsoriano.com
+      LETSENCRYPT_HOST: passwords.robertmsoriano.com, www.passwords.robertmsoriano.com
+      LETSENCRYPT_EMAIL: robertomsoriano@hotmail.com
+networks:
+  default:
+    external:
+      name: nginx-proxy
