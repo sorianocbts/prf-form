@@ -31,16 +31,37 @@ const PRF = () => {
         let selectedCode = e.target.value
         setQuizCode(selectedCode)
     }
-
+    // "https://cors-anywhere.herokuapp.com/http://ec2-54-205-248-111.compute-1.amazonaws.com:5000/api/courses/prf"
     function postForm(obj) {
         obj = JSON.stringify(obj);
-        fetch("https://cors-anywhere.herokuapp.com/http://ec2-54-205-248-111.compute-1.amazonaws.com:5000/api/courses/prf", {
+        fetch("http://ec2-54-205-248-111.compute-1.amazonaws.com:5000/api/courses/prf", {
             method: "POST",
+            mode: 'cors',
             body: obj,
             headers: {
                 "Content-Type": "application/json"
             }
-        }).then((x) => console.log("OK"));
+        }).then((x) => {
+            if (x.status == 200) {
+                Swal.fire(
+                    "Form submitted!",
+                    "If your proctor does not receive the password within one minute, please resubmit this form or email: course.info@cbtseminary.org",
+                    "success"
+                ).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.reload();
+                    }
+                })
+            }
+            else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!',
+                    footer: 'Email your request to course.info@cbtseminary.org'
+                })
+            }
+        });
     }
     // Form Submission
     const submitForm = (e) => {
@@ -56,15 +77,19 @@ const PRF = () => {
         }
         if (formData.studentEmail !== formData.proctorEmail) {
             postForm(formData);
-            Swal.fire(
-                "Form submitted!",
-                "If your proctor does not receive the password within one minute, please resubmit this form or email: course.info@cbtseminary.org",
-                "success"
-            );
-            setTimeout(function () {
-                // window.location.reload();
-                return
-            }, 10000);
+            // Swal.fire(
+            //     "Form submitted!",
+            //     "If your proctor does not receive the password within one minute, please resubmit this form or email: course.info@cbtseminary.org",
+            //     "success"
+            // ).then((result) => {
+            //     if (result.isConfirmed) {
+            //         window.location.reload();
+            //     }
+            // })
+            // setTimeout(function () {
+            //     window.location.reload();
+            //     return
+            // }, 10000);
 
         } else {
             alert("Invalid Proctor Email");
