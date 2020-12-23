@@ -42,7 +42,7 @@ const PRF = () => {
                 "Content-Type": "application/json"
             }
         }).then((x) => {
-            if (x.status == 200) {
+            if (x.status === 200) {
                 Swal.fire(
                     "Form submitted!",
                     "If your proctor does not receive the password within one minute, please resubmit this form or email: course.info@cbtseminary.org",
