@@ -37,15 +37,7 @@ export const testsData = [
     },
     {
         courseName: "BI14",
-        testName: "Q4"
-    },
-    {
-        courseName: "BI14",
         testName: "Final"
-    },
-    {
-        courseName: "BI14",
-        testName: "2019 Final"
     },
     {
         courseName: "BT11",
