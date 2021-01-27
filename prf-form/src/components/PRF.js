@@ -155,6 +155,10 @@ const PRF = () => {
                         Submit
           </button>
                 </form>
+                <div style={{ margin: '2rem' }}>
+                    If you are unable to submit this form sucessfully, please email your request to <a href="mailto:course.info@cbtseminary.org">course.info@cbtseminary.org</a>
+.
+                </div>
             </div>
         </div>
     )
