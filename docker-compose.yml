@@ -5,7 +5,7 @@ services:
     restart: always
     build: .
     ports:
-      - '4000:4000'
+      - '4000:80'
     # expose:
     #   - 80
     restart: always
