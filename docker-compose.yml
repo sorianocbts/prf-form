@@ -11,8 +11,8 @@ services:
     restart: always
 #     volumes: ['./:/var/www/html']
     environment:
-      VIRTUAL_HOST: passwords.cbtseminary.com, www.passwords.cbtseminary.com
-      LETSENCRYPT_HOST: passwords.cbtseminary.com, www.passwords.cbtseminary.com
+      VIRTUAL_HOST: passwords.cbtseminary.com
+      LETSENCRYPT_HOST: passwords.cbtseminary.com
       LETSENCRYPT_EMAIL: course.info@cbtseminary.org
 networks:
   default:
