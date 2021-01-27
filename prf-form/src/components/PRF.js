@@ -34,7 +34,7 @@ const PRF = () => {
     // "https://cors-anywhere.herokuapp.com/http://ec2-54-205-248-111.compute-1.amazonaws.com:5000/api/courses/prf"
     function postForm(obj) {
         obj = JSON.stringify(obj);
-        fetch("http://prf.cbtseminary.com/api/courses/prf", {
+        fetch("https://prf.cbtseminary.com/api/courses/prf", {
             method: "POST",
             mode: 'cors',
             body: obj,
