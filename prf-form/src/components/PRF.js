@@ -151,7 +151,7 @@ const PRF = () => {
 
                         </select>
                     </div>
-                    <button type="submit" className="btn  btn-sm btn-block w-100" onClick={e => submitForm(e)}>
+                    <button type="submit" className="btn  btn-sm btn-block w-100 shadow-sm" onClick={e => submitForm(e)}>
                         Submit
           </button>
                 </form>

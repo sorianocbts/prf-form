@@ -32,3 +32,7 @@
     background-color: #f1f1f1 !important;
     color: black;
   }
+  .btn:hover {
+    background-color: #0d6cbf67 !important;
+    color: black;
+  }
