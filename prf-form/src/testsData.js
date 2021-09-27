@@ -152,6 +152,14 @@ export const testsData = [
         testName: "Final"
     },
     {
+        courseName: "HT15(old)",
+        testName: "Midterm"
+    },
+    {
+        courseName: "HT15(old)",
+        testName: "Final"
+    },
+    {
         courseName: "HT15",
         testName: "Midterm"
     },
