@@ -34,7 +34,7 @@ const PRF = () => {
     // "https://cors-anywhere.herokuapp.com/http://ec2-54-205-248-111.compute-1.amazonaws.com:5000/api/courses/prf"
     function postForm(obj) {
         obj = JSON.stringify(obj);
-        fetch("https://prf.cbtseminary.com/api/courses/prf", {
+        fetch("https://prfbackend.cbtseminary.com/api/courses/prf", {
             method: "POST",
             mode: 'cors',
             body: obj,
@@ -127,9 +127,9 @@ const PRF = () => {
                     </div>
                     <div className="form-group w-100">
                         <label htmlFor="classCode">Class Code &amp; Title
-              <span className="form-required">
+                            <span className="form-required">
                                 *
-              </span></label>
+                            </span></label>
                         <select required className="form-control" id="classCode" value={classCode} onChange={(e) => classCodeSelectChanged(e)}>
                             <option value="none" defaultValue="" disabled="" hidden="">Select Class Code</option>
                             {titles.map((x, idx) => (
@@ -140,9 +140,9 @@ const PRF = () => {
 
                     <div className="form-group w-100">
                         <label htmlFor="testNumber">Quiz/Test number
-              <span className="form-required">
+                            <span className="form-required">
                                 *
-              </span></label>
+                            </span></label>
                         <select required className="form-control" id="testNumber" value={quizCode} onChange={(e) => selectedTest(e)}>
                             <option value="none" defaultValue="" disabled="" hidden="">Select Quiz/Test</option>
                             {availTest.map((x, idx) => (
@@ -153,11 +153,11 @@ const PRF = () => {
                     </div>
                     <button type="submit" className="btn  btn-sm btn-block w-100 shadow-sm" onClick={e => submitForm(e)}>
                         Submit
-          </button>
+                    </button>
                 </form>
                 <div style={{ margin: '2rem' }}>
                     If you are unable to submit this form sucessfully, please email your request to <a href="mailto:course.info@cbtseminary.org">course.info@cbtseminary.org</a>
-.
+                    .
                 </div>
             </div>
         </div>
