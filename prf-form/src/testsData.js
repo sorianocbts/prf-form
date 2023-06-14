@@ -144,6 +144,14 @@ export const testsData = [
         testName: "Exam 3"
     },
     {
+        courseName: "HT13 (2023)",
+        testName: "Dr. Waldron's Exam"
+    },
+    {
+        courseName: "HT13 (2023)",
+        testName: "Prof. David's Exam"
+    },
+    {
         courseName: "HT13",
         testName: "Exam 1"
     },
