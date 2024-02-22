@@ -96,6 +96,26 @@ export const testsData = [
         testName: "Final"
     },
     {
+        courseName: "BT712",
+        testName: "Q1"
+    },
+    {
+        courseName: "BT712",
+        testName: "Q2"
+    },
+    {
+        courseName: "BT712",
+        testName: "Q3"
+    },
+    {
+        courseName: "BT712",
+        testName: "Q4"
+    },
+    {
+        courseName: "BT712",
+        testName: "Final"
+    },
+    {
         courseName: "NT31",
         testName: "Q1"
     },
@@ -557,6 +577,10 @@ export const testsData = [
     },
     {
         courseName: "ST43",
+        testName: "Final"
+    },
+    {
+        courseName: "ST43-2023",
         testName: "Final"
     },
     {
