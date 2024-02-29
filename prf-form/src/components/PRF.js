@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
 import useForm from "../helpers/useForm"
-import { testsData } from '../courseData'
+import { testsData } from '../testsData'
 const PRF = () => {
     const [titles, setTitles] = useState([])
     const [availTest, setAvailTest] = useState([])
