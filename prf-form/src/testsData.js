@@ -566,6 +566,9 @@ export const testsData = [
     {
         courseName: "ST41",
         testName: "Final"
+    },{
+        courseName: "ST741",
+        testName: "Final"
     },
     {
         courseName: "ST43",
