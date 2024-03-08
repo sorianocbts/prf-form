@@ -280,6 +280,34 @@ export const testsData = [
         testName: "Final"
     },
     {
+        courseName: "HT745",
+        testName: "Q1"
+    },
+    {
+        courseName: "HT745",
+        testName: "Q2"
+    },
+    {
+        courseName: "HT745",
+        testName: "Q3"
+    },
+    {
+        courseName: "HT745",
+        testName: "Q4"
+    },
+    {
+        courseName: "HT745",
+        testName: "Q5"
+    },
+    {
+        courseName: "HT745",
+        testName: "Q6"
+    },
+    {
+        courseName: "HT745",
+        testName: "Final"
+    },
+    {
         courseName: "HT46",
         testName: "Exam 1"
     },
