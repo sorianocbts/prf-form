@@ -396,6 +396,10 @@ export const testsData = [
         testName: "Final Exam"
     },
     {
+        courseName: "PT718",
+        testName: "Final"
+    },
+    {
         courseName: "ST14",
         testName: "Q1"
     },
