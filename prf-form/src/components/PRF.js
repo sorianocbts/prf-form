@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
+import Select from 'react-select'
 import useForm from "../helpers/useForm"
 import { testsData } from '../testsData'
 const PRF = () => {
@@ -12,6 +13,8 @@ const PRF = () => {
         let tList = (testsData.map(x => x.courseName))
         setTitles([...new Set(tList)])
     }, [])
+
+
     // User Inputs
     const [user, handleChange] = useForm({
         fname: '',
@@ -22,14 +25,15 @@ const PRF = () => {
     });
     // Dropdowns
     const classCodeSelectChanged = (e) => {
-        let selectedCode = e.target.value
+        // let selectedCode = e.target.value
+        let selectedCode = e
         setClassCode(selectedCode)
         let quizzes = testsData.filter(x => x.courseName === selectedCode)
         setAvailTest(quizzes)
     }
     const selectedTest = (e) => {
         let selectedCode = e.target.value
-        setQuizCode(selectedCode)
+          setQuizCode(selectedCode)
     }
     // "https://cors-anywhere.herokuapp.com/http://ec2-54-205-248-111.compute-1.amazonaws.com:5000/api/courses/prf"
     function postForm(obj) {
@@ -130,12 +134,13 @@ const PRF = () => {
                             <span className="form-required">
                                 *
                             </span></label>
-                        <select required className="form-control" id="classCode" value={classCode} onChange={(e) => classCodeSelectChanged(e)}>
+                        {/* <select required className="form-control" id="classCode" value={classCode} onChange={(e) => classCodeSelectChanged(e)}>
                             <option value="none" defaultValue="" disabled="" hidden="">Select Class Code</option>
                             {titles.map((x, idx) => (
                                 <option key={idx} value={x}>{x}</option>
                             ))}
-                        </select>
+                        </select> */}
+                        <Select options={titles.map((x, idx) => ({value:x, label:x}))} onChange={(e) => {classCodeSelectChanged(e.value)}} />
                     </div>
 
                     <div className="form-group w-100">
