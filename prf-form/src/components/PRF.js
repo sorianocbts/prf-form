@@ -60,8 +60,10 @@ const toggleLanguage = () => {
         }).then((x) => {
             if (x.status === 200) {
                 Swal.fire(
-                    "Form submitted!",
-                    "If your proctor does not receive the password within one minute, please resubmit this form or email: course.info@cbtseminary.org",
+                    language === 'en' ? "Form submitted!" : "¡Formulario enviado!",
+                    language === 'en' 
+                        ? "If your proctor does not receive the password within one minute, please resubmit this form or email: course.info@cbtseminary.org" 
+                        : "Si tu supervisor no recibe la contraseña en un minuto, por favor reenvía este formulario o envía un correo a: course.info@cbtseminary.org",
                     "success"
                 ).then((result) => {
                     if (result.isConfirmed) {
@@ -72,9 +74,13 @@ const toggleLanguage = () => {
             else {
                 Swal.fire({
                     icon: 'error',
-                    title: 'Oops...',
-                    text: 'Something went wrong!',
-                    footer: 'Email your request to course.info@cbtseminary.org'
+                    title: language === 'en' ? 'Oops...' : 'Vaya...',
+                    text: language === 'en' 
+                        ? 'Something went wrong!' 
+                        : '¡Algo salió mal!',
+                    footer: language === 'en' 
+                        ? 'Email your request to course.info@cbtseminary.org' 
+                        : 'Envía tu solicitud a course.info@cbtseminary.org'
                 })
             }
         });
@@ -181,9 +187,13 @@ const toggleLanguage = () => {
     // )
     return (
         <div>
-          <button onClick={toggleLanguage}>
-            {language === 'en' ? 'Translate to Spanish' : 'Traducir al Inglés'}
-          </button>
+                <button 
+                onClick={toggleLanguage} 
+                className="btn btn-primary btn-lg mt-3 btn-block w-100 shadow-sm"
+                >
+                {language === 'en' ? 'Translate to Spanish' : 'Traducir al Inglés'}
+                </button>
+
           {language === 'en' ? (
                    <div className="container">
             <h2 style={{ color: '#0d6cbf' }}>Password Request Form</h2>
@@ -288,7 +298,7 @@ const toggleLanguage = () => {
                   </button>
                 </form>
                 <div style={{ margin: '2rem' }}>
-                  Si no puede enviar este formulario con éxito, envíe su solicitud por correo electrónico a <a href="mailto:course.info@cbtseminary.org">course.info@cbtseminary.org</a>.
+                  Si no logras enviar este formulario, envía tu solicitud a <a href="mailto:course.info@cbtseminary.org">course.info@cbtseminary.org</a>.
                 </div>
               </div>
             </div>
