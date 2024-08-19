@@ -189,9 +189,9 @@ const toggleLanguage = () => {
         <div>
                 <button 
                 onClick={toggleLanguage} 
-                className="btn btn-primary btn-lg mt-3 btn-block w-100"
+                className="btn btn-primary btn-lg mt-3 btn-block w-100" style={{ borderColor: 'transparent', color: 'black' }}
                 >
-                {language === 'en' ? 'Translate to Spanish' : 'Traducir al Inglés'}
+                {language === 'en' ? 'Traducir al Español' : 'Translate to English'}
                 </button>
 
           {language === 'en' ? (
