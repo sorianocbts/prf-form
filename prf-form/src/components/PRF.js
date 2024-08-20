@@ -14,7 +14,7 @@ const [testsData, setTestData] = useState(testsDataEN);
 // Function to toggle language
 const toggleLanguage = () => {
   setLanguage(language === 'en' ? 'es' : 'en');
-  setTestData(language === 'en' ? testsDataEN : testsDataES)
+  setTestData(language === 'en' ? testsDataES : testsDataEN)
 };
 
 
