@@ -29,7 +29,7 @@ const toggleLanguage = () => {
     useEffect(() => {
         let tList = (testsData.map(x => x.courseName))
         setTitles([...new Set(tList)])
-    }, [])
+    }, [testsData])
 
 
     // User Inputs
