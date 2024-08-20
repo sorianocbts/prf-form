@@ -1,4 +1,12 @@
-export const testsData = [
+export const testsDataES = [
+    {
+        courseName: "BI11",
+        testName: "Midterm"
+    }
+
+]
+
+export const testsDataEN = [
     {
         courseName: "BI11",
         testName: "Midterm"
