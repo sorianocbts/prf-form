@@ -95,7 +95,8 @@ const toggleLanguage = () => {
             proctorName: user.pname,
             proctorEmail: user.pemail,
             classCodeSelected: classCode,
-            testNumberSelected: quizCode
+            testNumberSelected: quizCode,
+            formLanguage: language
         }
         if (formData.studentEmail !== formData.proctorEmail) {
             postForm(formData);
