@@ -1,8 +1,5 @@
-// pop up ponerlo en espanol
-// poner en la clave otra linea
-// nombre completo del sup
-//
 
+// verificar email 
 
 export const testsDataES = [
     {

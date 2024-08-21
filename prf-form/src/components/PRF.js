@@ -31,7 +31,9 @@ const toggleLanguage = () => {
         setTitles([...new Set(tList)])
     }, [testsData])
 
+    useEffect(() => {
 
+    }, [testsData])
     // User Inputs
     const [user, handleChange] = useForm({
         fname: '',
@@ -52,6 +54,7 @@ const toggleLanguage = () => {
         let selectedCode = e.target.value
           setQuizCode(selectedCode)
     }
+
     // "https://cors-anywhere.herokuapp.com/http://ec2-54-205-248-111.compute-1.amazonaws.com:5000/api/courses/prf"
     function postForm(obj) {
         obj = JSON.stringify(obj);
