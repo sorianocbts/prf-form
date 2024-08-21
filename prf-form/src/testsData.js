@@ -1,3 +1,9 @@
+// pop up ponerlo en espanol
+// poner en la clave otra linea
+// nombre completo del sup
+//
+
+
 export const testsDataES = [
     {
         courseName: "BI11",
@@ -8,8 +14,8 @@ export const testsDataES = [
 
 export const testsDataEN = [
     {
-        courseName: "BI11",
-        testName: "Midterm"
+        courseName: "Orientación",
+        testName: "Examen de Prueba"
     },
     {
         courseName: "BI11",
