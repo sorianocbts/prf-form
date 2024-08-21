@@ -6,17 +6,14 @@
 
 export const testsDataES = [
     {
-        courseName: "BI11",
-        testName: "Midterm"
+        courseName: "Orientación",
+        testName: "Examen de Prueba"
     }
 
 ]
 
 export const testsDataEN = [
-    {
-        courseName: "Orientación",
-        testName: "Examen de Prueba"
-    },
+
     {
         courseName: "BI11",
         testName: "Final"
