@@ -107,7 +107,7 @@ const toggleLanguage = () => {
             postForm(formData);
 
         } else {
-            alert("Invalid Proctor Email");
+            language==="en"? alert("Invalid Proctor Email"): alert("El correo del supervisor no puede ser el mismo que el estudiante.") 
         }
 
     }
@@ -199,7 +199,7 @@ const toggleLanguage = () => {
                     <small>estudiante@ejemplo.com</small>
                   </div>
                   <div className="form-group w-100">
-                    <label htmlFor="proctorName">Nombre del Supervisor</label>
+                    <label htmlFor="proctorName">Nombre Completo del Supervisor</label>
                     <input required type="text" className="form-control" id="proctorName" name="pname" value={user.pname} onChange={handleChange} />
                   </div>
                   <div className="form-group w-100">
