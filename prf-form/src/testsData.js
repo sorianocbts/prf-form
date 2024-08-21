@@ -10,7 +10,10 @@ export const testsDataES = [
 ]
 
 export const testsDataEN = [
-
+    {
+        courseName: "BI11",
+        testName: "Midterm"
+    },
     {
         courseName: "BI11",
         testName: "Final"
