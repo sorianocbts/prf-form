@@ -5,7 +5,11 @@ export const testsDataES = [
     {
         courseName: "Orientación",
         testName: "Examen de Prueba"
-    }
+    },
+    {
+        courseName: "HT48e",
+        testName: "Examen Final"
+    },
 
 ]
 
