@@ -351,6 +351,10 @@ export const testsDataEN = [
         testName: "Exam 1"
     },
     {
+        courseName: "HT49",
+        testName: "Final Exam"
+    },
+    {
         courseName: "HT46",
         testName: "Exam 2"
     },
