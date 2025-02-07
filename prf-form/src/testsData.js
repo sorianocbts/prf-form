@@ -38,10 +38,10 @@ export const testsDataEN = [
         courseName: "BI13",
         testName: "Final"
     },
-    // {
-    //     courseName: "BI13 2022",
-    //     testName: "Final"
-    // },
+    {
+        courseName: "BI13 2022",
+        testName: "Final"
+    },
     // {
     //     courseName: "BI13 (Summer 2024)",
     //     testName: "Test #1"
@@ -58,6 +58,22 @@ export const testsDataEN = [
     //     courseName: "BI13 (Summer 2024)",
     //     testName: "Final Exam"
     // },
+    {
+        courseName: "BI13 (2024)",
+        testName: "Test #1"
+    },    {
+        courseName: "BI13 (2024)",
+        testName: "Test #2"
+    },    {
+        courseName: "BI13 (2024)",
+        testName: "Test #3"
+    },    {
+        courseName: "BI13 (2024)",
+        testName: "Test #4"
+    },    {
+        courseName: "BI13 (2024)",
+        testName: "Final Exam"
+    },
     {
         courseName: "BI14",
         testName: "Q1"
