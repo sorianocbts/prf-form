@@ -10,7 +10,36 @@ export const testsDataES = [
         courseName: "HT48e",
         testName: "Examen Final"
     },
+    {
 
+    courseName: "ST22e",
+    testName: "Examen Parcial #1"
+
+    },
+    {
+
+    courseName: "ST22e",
+    testName: "Examen Parcial #2"
+
+    },
+        {
+
+    courseName: "ST22e",
+    testName: "Examen Parcial #3"
+
+    },
+        {
+
+    courseName: "ST22e",
+    testName: "Examen Parcial #4"
+
+    },
+        {
+
+    courseName: "ST22e",
+    testName: "Examen Final"
+
+    },
 ]
 
 export const testsDataEN = [
