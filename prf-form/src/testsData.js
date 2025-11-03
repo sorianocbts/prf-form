@@ -10,6 +10,12 @@ export const testsDataES = [
         courseName: "HT48e",
         testName: "Examen Final"
     },
+        {
+
+    courseName: "ST21e",
+    testName: "Examen Final"
+
+    },
     {
 
     courseName: "ST22e",
