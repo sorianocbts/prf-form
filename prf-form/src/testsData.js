@@ -681,22 +681,22 @@ export const testsDataEN = [
         courseName: "ST27",
         testName: "Final"
     },
-    {
-        courseName: "ST41",
-        testName: "Q1"
-    },
-    {
-        courseName: "ST41",
-        testName: "Q2"
-    },
-    {
-        courseName: "ST41",
-        testName: "Q3"
-    },
-    {
-        courseName: "ST41",
-        testName: "Q4"
-    },
+    // {
+    //     courseName: "ST41",
+    //     testName: "Q1"
+    // },
+    // {
+    //     courseName: "ST41",
+    //     testName: "Q2"
+    // },
+    // {
+    //     courseName: "ST41",
+    //     testName: "Q3"
+    // },
+    // {
+    //     courseName: "ST41",
+    //     testName: "Q4"
+    // },
     {
         courseName: "ST41",
         testName: "Final"
