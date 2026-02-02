@@ -34,15 +34,39 @@ export const testsDataES = [
     testName: "Examen Parcial #3"
 
     },
-        {
+     {
 
     courseName: "ST22e",
     testName: "Examen Parcial #4"
 
     },
-        {
+    {
 
     courseName: "ST22e",
+    testName: "Examen Final"
+
+    },
+        {
+
+    courseName: "HT11e",
+    testName: "Examen 1"
+
+    },
+        {
+
+    courseName: "HT11e",
+    testName: "Examen 2"
+
+    },
+        {
+
+    courseName: "HT11e",
+    testName: "Examen 3"
+
+    },
+            {
+
+    courseName: "PT17e",
     testName: "Examen Final"
 
     },
