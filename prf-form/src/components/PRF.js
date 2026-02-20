@@ -17,6 +17,12 @@ const toggleLanguage = () => {
   setTestData(language === 'en' ? testsDataES : testsDataEN)
 };
 
+//added 02/20/26
+const GUIDE_URL = "https://support.cbtseminary.org/adding-proctors-in-pathway";
+
+// optional: allow dismissing the banner for the session
+const [showDiscontinueAlert, setShowDiscontinueAlert] = useState(true);
+
 
 
 //
@@ -123,6 +129,49 @@ const toggleLanguage = () => {
                 >
                 {language === 'en' ? 'Traducir al Español' : 'Translate to English'}
                 </button>
+{showDiscontinueAlert && (
+  <div
+    role="alert"
+    className="alert alert-warning d-flex align-items-start justify-content-between mt-3"
+    style={{ borderLeft: "6px solid #f0ad4e" }}
+  >
+    <div style={{ paddingRight: "1rem" }}>
+      <div style={{ fontWeight: 700 }}>
+        {language === "en" ? "Notice: This form is being discontinued." : "Aviso: Este formulario será descontinuado."}
+      </div>
+      <div>
+        {language === "en"
+          ? "Please use the step-by-step guide to add proctors in Pathway:"
+          : "Por favor usa la guía paso a paso para agregar supervisores en Pathway:"}{" "}
+        <a href={GUIDE_URL} target="_blank" rel="noreferrer" style={{ fontWeight: 600 }}>
+          {language === "en" ? "Open the guide →" : "Abrir la guía →"}
+        </a>
+      </div>
+    </div>
+
+    <div className="d-flex flex-column align-items-end" style={{ gap: "0.5rem" }}>
+      <a
+        href={GUIDE_URL}
+        target="_blank"
+        rel="noreferrer"
+        className="btn btn-sm btn-outline-dark"
+      >
+        {language === "en" ? "View Guide" : "Ver Guía"}
+      </a>
+
+      {/* optional dismiss button */}
+      <button
+        type="button"
+        className="btn btn-sm btn-link"
+        onClick={() => setShowDiscontinueAlert(false)}
+        style={{ padding: 0 }}
+        aria-label={language === "en" ? "Dismiss notice" : "Cerrar aviso"}
+      >
+        ×
+      </button>
+    </div>
+  </div>
+)}
 
           {language === 'en' ? (
                    <div className="container">
